@@ -2,13 +2,21 @@
 @import "tailwindcss";
 
 /* variables utilisables avec Tailwind UtiliSense plug in */
-
 @theme {
     --color-mypink: #FFA6C9;
     --color-mygreen: #8DBD42;
+    --text-clamp-display: clamp(36px, 8vw, 96px);
 }
 
 body {
     font-style: normal;
     font-family: "termina", sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: var(--text-clamp-display);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120.036%;
 }
