@@ -1,1 +1,14 @@
+@import url("https://use.typekit.net/vdv4jxp.css");
 @import "tailwindcss";
+
+/* variables utilisables avec Tailwind UtiliSense plug in */
+
+@theme {
+    --color-mypink: #FFA6C9;
+    --color-mygreen: #8DBD42;
+}
+
+body {
+    font-style: normal;
+    font-family: "termina", sans-serif;
+}
