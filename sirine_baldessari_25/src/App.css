@@ -6,6 +6,14 @@
     --color-mypink: #FFA6C9;
     --color-mygreen: #8DBD42;
     --text-clamp-display: clamp(36px, 8vw, 96px);
+    --text-clamp-h1: clamp(24px, 4vw, 48px);
+    --line-clamp-h1: clamp(43px, 5vw, 57px);
+    --text-clamp-body: clamp(16px, 2vw, 20px);
+    --line-clamp-body: clamp(19px, 3vw, 40px);
+    --text-clamp-legend: clamp(12px, 1.5vw, 14px);
+    --line-clamp-legend: clamp(14px, 2vw, 16px);
+    --text-clamp-Tlegend: clamp(10px, 1.5vw, 12px);
+    --line-clamp-Tlegend: clamp(12px, 2vw, 14px);
 }
 
 body {
@@ -16,7 +24,31 @@ body {
 h1 {
     font-weight: 900;
     font-size: var(--text-clamp-display);
-    font-style: normal;
     font-weight: 900;
     line-height: 120.036%;
+}
+
+h2 {
+    font-size: var(--text-clamp-h1);
+    font-weight: 900;
+    line-height: var(--line-clamp-h1);
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: var(--text-clamp-legend);
+    font-weight: 600;
+    line-height: var(--line-clamp-legend);
+}
+
+h4 {
+    font-size: var(--text-clamp-Tlegend);
+    font-weight: 500;
+    line-height: var(--line-clamp-Tlegend);
+}
+
+p {
+    font-size: var(--text-clamp-body);
+    font-weight: 800;
+    line-height: var(--line-clamp-body);
 }
