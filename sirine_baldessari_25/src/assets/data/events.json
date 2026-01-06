@@ -18,6 +18,7 @@
       }
     ],
     "tag": "rencontres et débats",
+    "tagUrl": "rencontres-et-debats",
     "autre": "https://youtu.be/qGq4mOMphao"
   },
   {
@@ -35,6 +36,7 @@
       }
     ],
     "tag": "arts et films",
+    "tagUrl": "arts-et-films",
     "autre": ""
   },
   {
@@ -52,6 +54,7 @@
       }
     ],
     "tag": "arts et films",
+    "tagUrl": "arts-et-films",
     "autre": ""
   }
 ]
