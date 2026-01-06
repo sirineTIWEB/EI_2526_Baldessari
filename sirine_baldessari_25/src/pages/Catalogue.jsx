@@ -26,16 +26,16 @@ function Catalogue() {
 
     useEffect(() => {
         // Initialiser Isotope localement
-        const elem = document.querySelector('.grid');
+        const elem = document.querySelector('.gridiso');
         if (elem) {
+            // w-80 = 320px + p-10 = 80px (40px left + 40px right) = 400px total
             isotope.current = new Isotope(elem, {
                 itemSelector: '.grid-item',
                 layoutMode: 'cellsByColumn',
                 cellsByColumn: {
-                    columnWidth: 110,
-                    rowHeight: 110
+                    columnWidth: 400,
+                    rowHeight: 400
                 }
-
             });
         }
 
@@ -58,7 +58,7 @@ function Catalogue() {
         <>
             <Hero title="Le Catalogue" />
             <SortFilter filters={filters} sorting={sorting} />
-            <section className="grid md:mx-24 mx-12 my-12 gap-5">
+            <section className="gridiso md:mx-24 mx-12 my-12 min-h-screen">
                 {oeuvres.map((oeuvre, index) => (
                     <Oeuvre key={index} url={oeuvre.url} title={oeuvre.title} image={oeuvre.image.src} tag={oeuvre.tag} tagUrl={oeuvre.tagUrl} />
                 ))}
