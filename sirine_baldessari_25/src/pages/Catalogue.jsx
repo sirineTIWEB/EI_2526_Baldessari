@@ -1,5 +1,5 @@
-import Hero from '../UI/Hero';
-import { useLoading } from "../LoadingPage";
+import Hero from '../composants/UI/Hero';
+import { useLoading } from "../context/LoadingContext";
 
 function Catalogue() {
 

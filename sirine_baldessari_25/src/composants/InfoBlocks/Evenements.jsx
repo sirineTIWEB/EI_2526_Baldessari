@@ -1,5 +1,5 @@
 import Event from "./Event";
-import { useLoading } from "../LoadingPage";
+import { useLoading } from "../../context/LoadingContext";
 
 function Evenements(){
     const { events } = useLoading();

@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import LoadingPage from './composants/LoadingPage'
+import LoadingPage from './context/LoadingContext'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Accueil from './composants/PageIndex/PageAccueil';
-import Info from './composants/PageInfo/PageInfo';
-import SinglePage from './composants/SinglePage/SinglePage';
-import Catalogue from './composants/PageCatalogue/Catalogue';
+import Accueil from './pages/PageAccueil';
+import Info from './pages/PageInfo';
+import SinglePage from './pages/SinglePage';
+import Catalogue from './pages/Catalogue';
 
 
 function App() {

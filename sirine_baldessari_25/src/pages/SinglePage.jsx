@@ -1,8 +1,8 @@
 import { useParams, useLocation } from "react-router-dom";
-import { useLoading } from "../LoadingPage";
-import Bouton from "../UI/Bouton";
-import Tag from "../UI/Tag";
-import InfoBlock from "../PageInfo/InfoBlock";
+import { useLoading } from "../context/LoadingContext";
+import Bouton from "../composants/UI/Bouton";
+import Tag from "../composants/UI/Tag";
+import InfoBlock from "../composants/UI/InfoBlock";
 
 function SinglePage() {
     // recup l'id de l'event cliqué depuis l'URL
