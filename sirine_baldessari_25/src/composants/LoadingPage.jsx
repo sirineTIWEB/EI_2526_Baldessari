@@ -18,6 +18,7 @@ export function useLoading() {
     return context;
 }
 
+
 function LoadingPage({ children }) {
     // loading 1fois pour une portée globale de DB peintures
     const [oeuvres, setOeuvres] = useState([]);
@@ -30,6 +31,11 @@ function LoadingPage({ children }) {
     // celui sert à l'initiation seulement
     const [initialLoad, setInitialLoad] = useState(true);
     const location = useLocation();
+
+    // FilterContext : Partage des filtres Isotope entre composants en utilisant le meme loading context
+
+    // état du filtre actif
+    const [activeFilter, setActiveFilter] = useState('*');
 
     // fonctions qui va pouvoir etre déclenché dans d'autres composants.
     const startLoading = () => {
@@ -62,7 +68,7 @@ function LoadingPage({ children }) {
 
     return (
         // provider pour le tenue globale des états
-        <LoadingContext.Provider value={{ isLoading, startLoading, stopLoading, oeuvres, events }}>
+        <LoadingContext.Provider value={{ isLoading, startLoading, stopLoading, oeuvres, events, activeFilter, setActiveFilter }}>
             {isLoading ? (
                 <div>
                     <p>Loading...</p>
