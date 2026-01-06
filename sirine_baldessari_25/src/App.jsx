@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Accueil />} />
           <Route path="/info" element={<Info />} />
           {/* passer l'url de l'event cliqué */}
-          <Route path="/event/:id" element={<SingleEvent />} />
+          <Route path="/evenement/:id" element={<SingleEvent />} />
         </Routes>
       </LoadingPage>
     </BrowserRouter>

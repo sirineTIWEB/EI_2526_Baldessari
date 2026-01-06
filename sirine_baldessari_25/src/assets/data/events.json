@@ -9,12 +9,12 @@
     "langues": "Néerlandais",
     "tarifs": [
       {
-      "type": "standard",
-      "prix": "10€"
+        "type": "standard",
+        "prix": "10€"
       },
       {
-      "type": "< 26ans",
-      "prix": "5€"
+        "type": "< 26ans",
+        "prix": "5€"
       }
     ],
     "tag": "rencontres et débats",
@@ -25,14 +25,13 @@
     "id": 2,
     "title": "Johnny guitar - nicolas ray",
     "url": "johnny-guitar-nicolas-ray",
-    "description": "",
+    "description": "Vienna est la propriétaire d’un saloon situé à un endroit clé, sur la future ligne de chemin de fer. Cette position stratégique lui attire la colère des ranchers locaux. Après la mort de son frère, Emma Small, jalouse de l’indépendance de Vienna, décide de tout faire pour l’évincer. C’est alors qu’entre en scène Johnny Guitar, un tireur semi-retraité, qui, pris dans le conflit, se joint à Vienna pour affronter les colères de la population locale. Un western hors du commun, où deux femmes se livrent une lutte psychologique bien plus intense qu’une simple rivalité. Avec ses sous-entendus féministes, son romantisme et ses couleurs éclatantes, Johnny Guitar est souvent considéré comme l’un des westerns les plus marquants du cinéma américain. Dans le studio de John Baldessari, la télévision était toujours allumée, sur des chaînes qui diffusaient des films en continu. Même lorsqu'il sortait, l'écran restait allumé pour son chien Benny. Ces films, allant de séries B aux westerns, ont fini par devenir une sorte de bruit de fond du quotidien de Baldessari. Ceux qui attiraient son attention trouvaient même leur place dans ses œuvres : il découpait des photos tirées de films hollywoodiens des années 1940 à 1960 et les combinait à ses formes colorées. Bozar présente une sélection de ses perles cinématographiques préférées.",
     "date": "19.11.25 - 19:30",
     "price": "entrée libre",
-    "langues": "",
+    "langues": "Anglais",
     "tarifs": [
       {
-        "type": "standard",
-        "prix": "10€"
+        "prix": "entrée libre"
       }
     ],
     "tag": "arts et films",
@@ -43,10 +42,10 @@
     "id": 3,
     "title": "le mépris - jean-luc godard",
     "url": "le-mepris-jean-luc-godard",
-    "description": "",
+    "description": "Adapté du roman éponyme d’Alberto Moravia publié en 1954, Le Mépris raconte l’histoire de Camille et Paul Javal, un couple installé à Rome. Lorsqu’un producteur américain, Jeremy Prokosch, propose à Paul de travailler sur une adaptation cinématographique de L’Odyssée, celui-ci y voit l’occasion de gagner suffisamment d’argent pour enfin réaliser son rêve : écrire pour le théâtre. Il espère ainsi prouver à sa femme qu’il a du talent — quitte à laisser le producteur tenter de la séduire. Mais Camille refuse de jouer ce jeu. Peu à peu, l’amour qu’elle éprouvait pour Paul se mue en mépris. Dans le studio de John Baldessari, la télévision était toujours allumée, sur des chaînes qui diffusaient des films en continu. Même lorsqu'il sortait, l'écran restait allumé pour son chien Benny. Ces films, allant de séries B aux westerns, ont fini par devenir une sorte de bruit de fond du quotidien de Baldessari. Ceux qui attiraient son attention trouvaient même leur place dans ses œuvres : il découpait des photos tirées de films hollywoodiens des années 1940 à 1960 et les combinait à ses formes colorées. Bozar présente une sélection de ses perles cinématographiques préférées.",
     "date": "19.11.25 - 19:30",
     "price": "entrée libre",
-    "langues": "",
+    "langues": "Français",
     "tarifs": [
       {
         "type": "standard",
