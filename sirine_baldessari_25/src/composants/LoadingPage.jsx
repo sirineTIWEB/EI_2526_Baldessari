@@ -1,5 +1,6 @@
 import { useState, useEffect, createContext, useContext } from "react";
 import jsonData from "../assets/data/oeuvres.json";
+import eventsData from "../assets/data/events.json";
 import { useLocation } from "react-router-dom";
 
 // utilisation de useContext pour une portée globale au lieu de répéter à chaque enfant.
@@ -20,6 +21,8 @@ export function useLoading() {
 function LoadingPage({ children }) {
     // loading 1fois pour une portée globale de DB peintures
     const [data, setData] = useState([]);
+    // loading 1fois pour une portée globale des événements
+    const [events, setEvents] = useState([]);
 
     // sert à différencier loadingpage ou index
     const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +43,7 @@ function LoadingPage({ children }) {
     useEffect(() => {
         if (initialLoad) {
             setData(jsonData);
+            setEvents(eventsData);
             setIsLoading(false);
             setInitialLoad(false);
         }
@@ -58,7 +62,7 @@ function LoadingPage({ children }) {
 
     return (
         // provider pour le tenue globale des états
-        <LoadingContext.Provider value={{ isLoading, startLoading, stopLoading, data }}>
+        <LoadingContext.Provider value={{ isLoading, startLoading, stopLoading, data, events }}>
             {isLoading ? (
                 <div>
                     <p>Loading...</p>
