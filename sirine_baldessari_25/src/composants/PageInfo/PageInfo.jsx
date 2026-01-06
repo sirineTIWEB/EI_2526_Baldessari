@@ -3,6 +3,7 @@ import ImgUrl from '../../assets/illustrations/sittingJohn.png'
 import BannerAlert from './BannerAlert'
 import InfoBlock from './InfoBlock'
 import Tarifs from './Tarifs'
+import Evenements from './Evenements'
 
 function PageInfo() {
 
@@ -24,6 +25,7 @@ function PageInfo() {
                 </InfoBlock>
             </section>
             <Tarifs />
+            <Evenements />
         </>
     )
 }

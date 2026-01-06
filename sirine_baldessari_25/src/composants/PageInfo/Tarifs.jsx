@@ -26,12 +26,12 @@ function Tarifs() {
 
 
     return (
-        <section className="md:mx-24 mx-12 flex md:gap-y-10 md:gap-x-12 flex-wrap">
+        <section className="md:ml-24 mr-12 md:mr-6 ml-12 flex md:mb-24 mb-16 md:gap-y-10 md:gap-x-12 flex-wrap">
             <h2 className="w-full text-left">Tarifs</h2>
             {tarifs.map((tarif, index) => (
                 <Ticket key={index} titre={tarif.title} prix={tarif.prix} />
             ))}
-
+            <p>Visites guidées disponible en français et néerlandais.</p>
         </section>
     )
 }

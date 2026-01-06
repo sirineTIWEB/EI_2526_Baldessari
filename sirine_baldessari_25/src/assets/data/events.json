@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Dirk van Bastelaere meets John Baldessari",
+    "url": "dirk-van-bastelaere-meets-john-baldessari",
+    "description": "Le poète et essayiste belge Dirk van Bastelaere est  souvent considéré comme l'un des poètes postmodernes les plus influents  en Belgique et aux Pays-Bas. Son oeuvre s'inspire largement des artistes et poètes américains, tels que Gertrude Stein, David Lynch et John Baldessari. À l'occasion de l'exposition autour de Baldessari à Bozar cet automne, nous avons invité van Bastelaere à écrire des poèmes en hommage à cet  artiste. Son recueil trilingue intitulé Un revolver sans suite, tout comme le revolver suivant Notes sur John Baldessari a été publié par éditions het balanseer et Bozar.",
+    "date": "19.11.26 - 19:30",
+    "price": "à partir de 10€",
+    "langues": "Néerlandais",
+    "tarifs": [
+      {
+      "type": "standard",
+      "prix": "10€"
+      },
+      {
+      "type": "< 26ans",
+      "prix": "5€"
+      }
+    ],
+    "tag": "rencontres et débats",
+    "autre": "https://youtu.be/qGq4mOMphao"
+  },
+  {
+    "id": 2,
+    "title": "Johnny guitar - nicolas ray",
+    "url": "johnny-guitar-nicolas-ray",
+    "description": "",
+    "date": "19.11.25 - 19:30",
+    "price": "entrée libre",
+    "langues": "",
+    "tarifs": [
+      {
+        "type": "standard",
+        "prix": "10€"
+      }
+    ],
+    "tag": "arts et films",
+    "autre": ""
+  },
+  {
+    "id": 3,
+    "title": "le mépris - jean-luc godard",
+    "url": "le-mepris-jean-luc-godard",
+    "description": "",
+    "date": "19.11.25 - 19:30",
+    "price": "entrée libre",
+    "langues": "",
+    "tarifs": [
+      {
+        "type": "standard",
+        "prix": "10€"
+      }
+    ],
+    "tag": "arts et films",
+    "autre": ""
+  }
+]

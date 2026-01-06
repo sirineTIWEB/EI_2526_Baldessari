@@ -1,5 +1,5 @@
 import { useState, useEffect, createContext, useContext } from "react";
-import jsonData from "../assets/data.json";
+import jsonData from "../assets/data/oeuvres.json";
 import { useLocation } from "react-router-dom";
 
 // utilisation de useContext pour une portée globale au lieu de répéter à chaque enfant.

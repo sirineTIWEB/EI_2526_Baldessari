@@ -8,6 +8,8 @@
     --text-clamp-display: clamp(36px, 8vw, 96px);
     --text-clamp-h1: clamp(24px, 4vw, 48px);
     --line-clamp-h1: clamp(43px, 5vw, 57px);
+    --text-clamp-h2: clamp(24px, 4vw, 43px);
+    --line-clamp-h2: clamp(28px, 5vw, 36px);
     --text-clamp-body: clamp(16px, 2vw, 20px);
     --line-clamp-body: clamp(19px, 3vw, 40px);
     --text-clamp-legend: clamp(12px, 1.5vw, 14px);
@@ -35,6 +37,19 @@ h2 {
     text-transform: capitalize;
 }
 
+h5 {
+    font-size: var(--text-clamp-h2);
+    font-weight: 800;
+    line-height: var(--line-clamp-h2);
+    text-transform: capitalize;
+}
+
+p {
+    font-size: var(--text-clamp-body);
+    font-weight: 800;
+    line-height: var(--line-clamp-body);
+}
+
 h3 {
     font-size: var(--text-clamp-legend);
     font-weight: 600;
@@ -45,10 +60,4 @@ h4 {
     font-size: var(--text-clamp-Tlegend);
     font-weight: 500;
     line-height: var(--line-clamp-Tlegend);
-}
-
-p {
-    font-size: var(--text-clamp-body);
-    font-weight: 800;
-    line-height: var(--line-clamp-body);
 }

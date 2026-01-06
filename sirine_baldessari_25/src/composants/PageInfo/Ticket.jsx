@@ -32,16 +32,16 @@ function Ticket(props) {
 
 
     return (
-        <article className='border-2 flex flex-col border-black bg-mypink md:gap-12 md:mb-10 md:pb-10 md:w-[40vw]'>
+        <article className='border-2 flex flex-col border-black bg-mypink gap-12 mb-10 pb-10 w-full md:w-[40vw]'>
             <div>
                 <img src={BozarLogo} alt="Bozar Logo" className='md:h-28 h-16' />
-                <div className='md:ml-8 flex flex-col md:gap-1'>
+                <div className='ml-5 md:ml-8 flex flex-col md:gap-1'>
                     <h3>John Baldessari</h3>
                     <h3>Paraboles, fables et autres salades</h3>
                 </div>
             </div>
-            <div className='flex flex-row md:mx-8 w-full'>
-                <div className='flex flex-row justify-between w-full'>
+            <div className='flex flex-col md:flex-row justify-between md:px-8 px-5 md:w-full'>
+                <div className='flex flex-row justify-between w-full md:mb-0 mb-5'>
                     <div>
                         <h4>{props.titre}</h4>
                         <h4>{props.prix}</h4>
@@ -54,7 +54,7 @@ function Ticket(props) {
                     </div>
 
                 </div>
-                <div className='border-l-2 border-black md:px-2.5 flex flex-col w-fit'>
+                <div className='md:border-t-0 border-t-2 md:border-l-2 border-black md:px-2.5 flex flex-col w-full md:w-[30vw] pt-5 md:pt-0'>
                     <h3>Lieu</h3>
                     <div >
                         <h4 className='text-nowrap'>BOZAR/Palais des Beaux-Arts</h4>
