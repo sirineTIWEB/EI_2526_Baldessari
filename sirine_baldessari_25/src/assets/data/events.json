@@ -19,6 +19,12 @@
     ],
     "tag": "rencontres et débats",
     "tagUrl": "rencontres-et-debats",
+    "image": [
+      {
+        "aspect": "paysage",
+        "src": "/assets/events/bastelaere.jpg"
+      }
+    ],
     "autre": "https://youtu.be/qGq4mOMphao"
   },
   {
@@ -36,6 +42,12 @@
     ],
     "tag": "arts et films",
     "tagUrl": "arts-et-films",
+    "image": [
+      {
+        "aspect": "portrait",
+        "src": "/assets/events/guitar.png"
+      }
+    ],
     "autre": ""
   },
   {
@@ -54,6 +66,12 @@
     ],
     "tag": "arts et films",
     "tagUrl": "arts-et-films",
+    "image": [
+      {
+        "aspect": "portrait",
+        "src": "/assets/events/mepris.png"
+      }
+    ],
     "autre": ""
   }
 ]

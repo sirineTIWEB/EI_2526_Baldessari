@@ -4,7 +4,7 @@ import LoadingPage from './composants/LoadingPage'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Accueil from './composants/PageIndex/PageAccueil';
 import Info from './composants/PageInfo/PageInfo';
-import SingleEvent from './composants/SingleEvent/SingleEvent';
+import SinglePage from './composants/SinglePage/SinglePage';
 
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
           <Route path="/" element={<Accueil />} />
           <Route path="/info" element={<Info />} />
           {/* passer l'url de l'event cliqué */}
-          <Route path="/evenement/:id" element={<SingleEvent />} />
+          <Route path="/evenement/:id" element={<SinglePage />} />
+          <Route path="/oeuvre/:id" element={<SinglePage />} />
         </Routes>
       </LoadingPage>
     </BrowserRouter>
