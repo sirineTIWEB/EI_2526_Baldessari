@@ -2,6 +2,7 @@ import { useParams, useLocation } from "react-router-dom";
 import { useLoading } from "../LoadingPage";
 import Bouton from "../UI/Bouton";
 import Tag from "../UI/Tag";
+import InfoBlock from "../PageInfo/InfoBlock";
 
 function SinglePage() {
     // recup l'id de l'event cliqué depuis l'URL
@@ -31,12 +32,12 @@ function SinglePage() {
             <div className="md:mx-24 md:my-9 w-fit">
                 <Bouton title={`Retour aux ${isEvent ? 'événements' : 'oeuvres'}`} onClick={() => window.history.back()} />
             </div>
-            <div className="hidden md:flex md:ml-24 md:mr-2.5 gap-24">
-                <div className={`${data.image[0].aspect === 'portrait' ? 'w-[40vw]' : 'w-[70vw]'}`}>
-                    <img src={data.image[0].src} alt={data.title} className="object-cover" />
+            <div className="hidden md:flex md:mx-24 gap-24">
+                <div className={`${data.image[0].aspect === 'portrait' ? 'w-[40vw]' : 'w-[70vw]'} aspect-3/2`}>
+                    <img src={data.image[0].src} alt={data.title} className="w-full object-cover" />
 
                 </div>
-                <div className="flex flex-col gap-20">
+                <div className="flex flex-col gap-20 w-fit">
                     <div>
                         <h5>{data.title}</h5>
                         <div className="flex items-center gap-5">
@@ -70,15 +71,43 @@ function SinglePage() {
                     <p>{data.description}</p>
                 </div>
             </div>
-            <p>{data.price}</p>
 
-            {data.langues && <p>Langues: {data.langues}</p>}
-            <div>
-                <h3>Tarifs:</h3>
-                {data.tarifs.map((tarif, index) => (
-                    <p key={index}>{tarif.type}: {tarif.prix}</p>
-                ))}
-            </div>
+            {isEvent && (
+                <>
+                    <section className='md:mx-24 mx-12 md:my-24 my-12 flex md:flex-row flex-col md:gap-0 gap-6 justify-between'>
+                        <InfoBlock title="Tarifs">
+                            {data.tarifs.map((tarif, index) => (
+                                <div key={index} className="flex flex-row justify-between w-[30vw]">
+                                    <p>{tarif.type}</p>
+                                    <p>{tarif.prix}</p>
+                                </div>
+                            ))}
+                        </InfoBlock>
+                        <InfoBlock title="Langues">
+                            <p>{data.langues}</p>
+                        </InfoBlock>
+                    </section>
+                    <section className="md:mx-24 mx-12 md:mb-24 mb-12">
+                        <InfoBlock title="En Lien">
+                            <div className="w-[60vw] aspect-video">
+                                <iframe
+                                    className="w-full h-full"
+                                    src={data.autre}
+                                    title="YouTube video player"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                />
+                            </div>
+                        </InfoBlock>
+
+
+                    </section>
+
+                </>
+
+            )}
         </>
     )
 }
