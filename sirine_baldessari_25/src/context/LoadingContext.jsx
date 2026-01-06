@@ -37,6 +37,9 @@ function LoadingPage({ children }) {
     // état du filtre actif
     const [activeFilter, setActiveFilter] = useState('*');
 
+
+
+
     // fonctions qui va pouvoir etre déclenché dans d'autres composants.
     const startLoading = () => {
         setIsLoading(true);

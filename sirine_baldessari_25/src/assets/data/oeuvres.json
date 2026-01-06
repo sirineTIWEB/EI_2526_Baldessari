@@ -1,17 +1,213 @@
 [
   {
     "id": 1,
-    "title": "tst",
-    "desc": "lorem ipsum dolor sit amet"
+    "title": "Double Vision: Warhol",
+    "url": "double-vision-warhol",
+    "description": "“L’idée de base de cette série est  de ralentir la réaction du spectateur face à l’art. Souvent, il s’agit simplement d’une identitfication de marque. Par exemple, “Cest un Warhol” ou “C’est un Picasso”. J’essaie de provoquer le doute en fournissant des informations trompeuses.” Double Vision : Combiner le nom d’un artiste avec l’imagerie d’un autre artiste.",
+    "date": "2011",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Double Vision",
+    "collectionUrl": "double-vision",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/doublevisionWARHOL.jpg"
+    }
   },
   {
     "id": 2,
-    "title": "tst",
-    "desc": "lorem ipsum dolor sit amet"
+    "title": "Double Vision: Cezanne",
+    "url": "double-vision-cezanne",
+    "description": "“L’idée de base de cette série est  de ralentir la réaction du spectateur face à l’art. Souvent, il s’agit simplement d’une identitfication de marque. Par exemple, “Cest un Warhol” ou “C’est un Picasso”. J’essaie de provoquer le doute en fournissant des informations trompeuses.” Double Vision : Combiner le nom d’un artiste avec l’imagerie d’un autre artiste.",
+    "date": "2011",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Double Vision",
+    "collectionUrl": "double-vision",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/doublevisionCezanne.jpg"
+    }
   },
   {
     "id": 3,
-    "title": "tst",
-    "desc": "lorem ipsum dolor sit amet"
+    "title": "Double Vision: Duchamp",
+    "url": "double-vision-duchamp",
+    "description": "“L’idée de base de cette série est  de ralentir la réaction du spectateur face à l’art. Souvent, il s’agit simplement d’une identitfication de marque. Par exemple, “Cest un Warhol” ou “C’est un Picasso”. J’essaie de provoquer le doute en fournissant des informations trompeuses.” Double Vision : Combiner le nom d’un artiste avec l’imagerie d’un autre artiste.",
+    "date": "2011",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Double Vision",
+    "collectionUrl": "double-vision",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/doublevisionDuchamp.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Double Vision: Lewitt",
+    "url": "double-vision-lewitt",
+    "description": "“L’idée de base de cette série est  de ralentir la réaction du spectateur face à l’art. Souvent, il s’agit simplement d’une identitfication de marque. Par exemple, “Cest un Warhol” ou “C’est un Picasso”. J’essaie de provoquer le doute en fournissant des informations trompeuses.” Double Vision : Combiner le nom d’un artiste avec l’imagerie d’un autre artiste.",
+    "date": "2011",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Double Vision",
+    "collectionUrl": "double-vision",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/doublevisionLewitt.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Double Vision: Malevich",
+    "url": "double-vision-malevich",
+    "description": "“L’idée de base de cette série est  de ralentir la réaction du spectateur face à l’art. Souvent, il s’agit simplement d’une identitfication de marque. Par exemple, “Cest un Warhol” ou “C’est un Picasso”. J’essaie de provoquer le doute en fournissant des informations trompeuses.” Double Vision : Combiner le nom d’un artiste avec l’imagerie d’un autre artiste.",
+    "date": "2011",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Double Vision",
+    "collectionUrl": "double-vision",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/doublevisionMalevich.jpg"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Double Vision: Matisse",
+    "url": "double-vision-matisse",
+    "description": "“L’idée de base de cette série est  de ralentir la réaction du spectateur face à l’art. Souvent, il s’agit simplement d’une identitfication de marque. Par exemple, “Cest un Warhol” ou “C’est un Picasso”. J’essaie de provoquer le doute en fournissant des informations trompeuses.” Double Vision : Combiner le nom d’un artiste avec l’imagerie d’un autre artiste.",
+    "date": "2011",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Double Vision",
+    "collectionUrl": "double-vision",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/doublevisionMatisse.jpg"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Double Vision: Rodchenko",
+    "url": "double-vision-rodchenko",
+    "description": "“L’idée de base de cette série est  de ralentir la réaction du spectateur face à l’art. Souvent, il s’agit simplement d’une identitfication de marque. Par exemple, “Cest un Warhol” ou “C’est un Picasso”. J’essaie de provoquer le doute en fournissant des informations trompeuses.” Double Vision : Combiner le nom d’un artiste avec l’imagerie d’un autre artiste.",
+    "date": "2011",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Double Vision",
+    "collectionUrl": "double-vision",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/doublevisionRodchenko.jpg"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Goya Series: And",
+    "url": "double-vision-warhol-noir-et-blanc",
+    "description": "“Pour ce nouveau travail, j'utilise les titres de Goya, ou j'invente des titres à la Goya et je les associe à des photographies que j'ai prises. La combinaison fonctionne le mieux quand elle ne met en exergue ni la photo, ni le titre. Les deux ont alors la même importance et il y a un moment de synthèse et d'équilibre.” Goya Series : Série d'oeuvres mesurant toutes 190,5 X 152,4 cm, et se composent d'impression de jet d'encre et peinture émail sur toile.",
+    "date": "1997",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Goya Series",
+    "collectionUrl": "goya-series",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/goyaAnd.jpg"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Goya Series: There isn't time",
+    "url": "goya-series-there-isnt-time",
+    "description": "“Pour ce nouveau travail, j'utilise les titres de Goya, ou j'invente des titres à la Goya et je les associe à des photographies que j'ai prises. La combinaison fonctionne le mieux quand elle ne met en exergue ni la photo, ni le titre. Les deux ont alors la même importance et il y a un moment de synthèse et d'équilibre.” Goya Series : Série d'oeuvres mesurant toutes 190,5 X 152,4 cm, et se composent d'impression de jet d'encre et peinture émail sur toile.",
+    "date": "1997",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Goya Series",
+    "collectionUrl": "goya-series",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/goyaThereisntTime.jpg"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Goya Series: This, that, or the other",
+    "url": "goya-series-this-that-or-the-other",
+    "description": "“Pour ce nouveau travail, j'utilise les titres de Goya, ou j'invente des titres à la Goya et je les associe à des photographies que j'ai prises. La combinaison fonctionne le mieux quand elle ne met en exergue ni la photo, ni le titre. Les deux ont alors la même importance et il y a un moment de synthèse et d'équilibre.” Goya Series : Série d'oeuvres mesurant toutes 190,5 X 152,4 cm, et se composent d'impression de jet d'encre et peinture émail sur toile.",
+    "date": "1997",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Goya Series",
+    "collectionUrl": "goya-series",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/goyaThisThatOrTheOther.jpg"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Prima Facie (Second State): Hopeless",
+    "url": "prima-facie-second-state-hopeless",
+    "description": "“Ce que j'ai essayé de faire, c'était de troiver des équivalents, un mot qui aurait le même poids que la photographie. Mais sachant cela, j'ai, d'une part, utilisé des acteurs et des actrices, et ce qu'ils font, c'est feindre des émotions. D'autre part j'ai tenté de déterminer si j'avais vu une personne avec un tel visage, qui m'aurait fait penser qu'elle était en colère, méfiante, désagréable ou quoi que ce soit d'autre. Qui sait ? C'est pourquoi je l'i appelé Prima Facie, à première vue ; c'est ainsi que nous tirons des conclusiosn hatives...” Prima Facie : Production de 5 “états” différents d'une série qui, une fois de plus, combine images et mots.",
+    "date": "2005",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Prima Facie",
+    "collectionUrl": "prima-facie",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/primaFacie_hopeless.jpg"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Prima Facie (Fourth State): Strained and et cetera",
+    "url": "prima-facie-fourth-state-strained-and-et-cetera",
+    "description": "“Ce que j'ai essayé de faire, c'était de troiver des équivalents, un mot qui aurait le même poids que la photographie. Mais sachant cela, j'ai, d'une part, utilisé des acteurs et des actrices, et ce qu'ils font, c'est feindre des émotions. D'autre part j'ai tenté de déterminer si j'avais vu une personne avec un tel visage, qui m'aurait fait penser qu'elle était en colère, méfiante, désagréable ou quoi que ce soit d'autre. Qui sait ? C'est pourquoi je l'i appelé Prima Facie, à première vue ; c'est ainsi que nous tirons des conclusiosn hatives...” Prima Facie : Production de 5 “états” différents d'une série qui, une fois de plus, combine images et mots.",
+    "date": "2005",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "Prima Facie",
+    "collectionUrl": "prima-facie",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/primaFacie_strained.jpeg"
+    }
+  },
+  {
+    "id": 13,
+    "title": "Throwing Three Balls in the Air to Get a Straing Line (Best of Thirty-Six Attempts)",
+    "url": "throwing-three-balls-in-the-air",
+    "description": "Throwing Three Balls in the Air to Get a Straing Line (Best of Thirty-Six Attempts) fait partie d'une série d'oeuvres dans lequelles Baldessari a photographié des balles lancées en l'air pour tracer des formes géométriques : carrés, triangles équilatéraux et lignes droites, sur fond de palmiers ensoleillés de Californie du Sud et de vaste ciel bleu.",
+    "date": "1973",
+    "tag": "Peinture",
+    "tagUrl": "peinture",
+    "collection": "",
+    "collectionUrl": "",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/throwingballs.jpg"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Two Kisses: Drinking / Eating / Chaotic Situation / Sidewalk / Cactus",
+    "url": "two-kisses-drinking-eating-chaotic-situation-sidewalk-cactus",
+    "description": "“C'est peut-être la tyrannie du cadre. Enjouant à ces jeux, je peux empêcher me cadre de se refermer, de dominer. Je sélectionne, je recadre et j'obtiens ainsis tous ces détails des oeuvres, les icônes deviennent gérables et les oeuvres moins importantes deviennent meilleures. Une démocratisation. Comme ELvis à l'armée. Pour moi chaque élément recadré est cependant une oeuvre d'art, et tous sont adorables (comme une portée de chiots)”",
+    "date": "1992",
+    "tag": "Photo",
+    "tagUrl": "photo",
+    "collection": "",
+    "collectionUrl": "",
+    "image": {
+      "aspect": "portrait",
+      "src": "/assets/peintures/twokisses.png"
+    }
   }
+  
 ]
