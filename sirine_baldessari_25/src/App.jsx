@@ -9,26 +9,40 @@ import Catalogue from './pages/Catalogue';
 import Contact from './pages/Contact';
 import Footer from './composants/Footer';
 import Header from './composants/Header';
+import Admin from './pages/Admin';
+import Dashboard from './pages/Dashboard';
+
+import RouteProtegee from './composants/RouteProtegee.jsx';
+import { AuthProvider } from './context/AuthContext.jsx';
 
 
 function App() {
 
   return (
-    <BrowserRouter>
-      <LoadingPage>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Accueil />} />
-          <Route path="/info" element={<Info />} />
-          <Route path="/catalogue" element={<Catalogue />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* passer l'url de l'event cliqué */}
-          <Route path="/evenement/:id" element={<SinglePage />} />
-          <Route path="/oeuvre/:id" element={<SinglePage />} />
-        </Routes>
-        <Footer />
-      </LoadingPage>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <LoadingPage>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Accueil />} />
+            <Route path="/info" element={<Info />} />
+            <Route path="/catalogue" element={<Catalogue />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/admin" element={<Admin />} />
+            {/* passer l'url de l'event cliqué */}
+            <Route path="/evenement/:id" element={<SinglePage />} />
+            <Route path="/oeuvre/:id" element={<SinglePage />} />
+            <Route path="/dashboard" element={
+              <RouteProtegee>
+                <Dashboard />
+              </RouteProtegee>
+            }
+            />
+          </Routes>
+          <Footer />
+        </LoadingPage>
+      </BrowserRouter>
+    </AuthProvider>
   )
 }
 
