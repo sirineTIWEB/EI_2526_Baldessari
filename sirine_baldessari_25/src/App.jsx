@@ -8,6 +8,7 @@ import SinglePage from './pages/SinglePage';
 import Catalogue from './pages/Catalogue';
 import Contact from './pages/Contact';
 import Footer from './composants/Footer';
+import Header from './composants/Header';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <LoadingPage>
+        <Header />
         <Routes>
           <Route path="/" element={<Accueil />} />
           <Route path="/info" element={<Info />} />
