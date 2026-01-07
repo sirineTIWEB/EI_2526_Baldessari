@@ -2,12 +2,13 @@ import { Link } from "react-router";
 import Facebook from '../assets/icon/facebook.png';
 import Instagram from '../assets/icon/instagram.png';
 import Youtube from '../assets/icon/youtube.png';
+import Logo from '../assets/logo/logo_header.png';
 
 function Footer() {
     return (
         <footer className="bg-mypink p-12 md:px-24 md:py-5 flex md:flex-row flex-col gap-12 md:justify-between">
             <section className="flex flex-col gap-10">
-                <img src="" alt="logo" />
+                <img src={Logo} alt="logo Baldessari" className="h-12 w-fit object-contain"/>
                 <div className="flex md:flex-row flex-col gap-6 md:gap-0 md:justify-between">
                     <div className="flex flex-col items-start gap-1.5">
                         <h3>Palais des Beaux-Arts</h3>

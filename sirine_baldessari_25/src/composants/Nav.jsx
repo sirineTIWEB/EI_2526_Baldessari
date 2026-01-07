@@ -2,7 +2,7 @@ import Lien from './UI/Lien'
 
 function Nav() {
     return (
-        <ul className='flex'>
+        <ul className='flex md:flex-row flex-col'>
             <Lien to="/" title="Accueil" />
             <Lien to="/about" title="Baldessari" />
             <Lien to="/catalogue" title="Catalogue" />
