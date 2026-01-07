@@ -3,6 +3,7 @@ import { useLoading } from "../context/LoadingContext";
 import Bouton from "../composants/UI/Bouton";
 import Tag from "../composants/UI/Tag";
 import InfoBlock from "../composants/UI/InfoBlock";
+import { Link } from "react-router-dom";
 
 function SinglePage() {
     // recup l'id de l'event cliqué depuis l'URL
@@ -13,6 +14,9 @@ function SinglePage() {
 
     // recup les événements depuis le Context
     const { events, oeuvres } = useLoading();
+
+    // Extraire tous les tags uniques
+    const uniqueTags = [...new Set(oeuvres.map(o => JSON.stringify({ tag: o.tag, tagUrl: o.tagUrl })))].map(t => JSON.parse(t));
 
     // déterminable avec seulement un pathname
     const isEvent = location.pathname.startsWith('/evenement');
@@ -104,10 +108,67 @@ function SinglePage() {
                                 />
                             </div>
                         </InfoBlock>
-
-
                     </section>
 
+                </>
+
+            )}
+
+            {!isEvent && (
+                <> {data.collection && (
+                    <section className='md:mx-24 mx-12 md:my-24 my-12 flex md:flex-row flex-col md:gap-0 gap-6 justify-between'>
+                        <InfoBlock title={`De la même collection ${data.collection}`}>
+
+                            {/* afficher toutes les autres oeuvres de la meme collection */}
+
+                            <div className="flex flex-row overflow-x-auto gap-24 w-full max-w-full">
+
+                                {oeuvres.filter(o => o.collection === data.collection && o.url !== data.url).map((oeuvre, index) => (
+                                    // doit être cliquable pour aller à la page de l'oeuvre
+                                    <Link to={`/oeuvre/${oeuvre.url}`} key={index} className="cursor-pointer w-75 h-100">
+                                        <img src={Array.isArray(oeuvre.image) ? oeuvre.image[0].src : oeuvre.image.src} alt={oeuvre.title} className="w-full h-full object-cover" />
+                                    </Link>
+                                ))}
+
+                            </div>
+
+
+                        </InfoBlock>
+                    </section>
+                )
+
+                }
+
+                    <section className='md:mx-24 mx-12 md:my-24 my-12 flex md:flex-row flex-col md:gap-0 gap-6 justify-between'>
+                        <InfoBlock title="à découvrir aussi">
+
+                            {/* afficher trois oeuvres random + qui ne sont pas de la meme collection si y a collection et cliquable */}
+
+                            <div className="flex flex-row overflow-x-auto gap-24 w-full">
+
+                                {oeuvres.filter(o => o.url !== data.url && o.collection !== data.collection).sort(() => 0.5 - Math.random()).slice(0, 3).map((oeuvre, index) => (
+                                    // doit être cliquable pour aller à la page de l'oeuvre
+                                    <Link to={`/oeuvre/${oeuvre.url}`} key={index} className="cursor-pointer w-75 h-100">
+                                        <img src={Array.isArray(oeuvre.image) ? oeuvre.image[0].src : oeuvre.image.src} alt={oeuvre.title} className="w-full h-full object-cover" />
+                                    </Link>
+                                ))}
+                            </div>
+                        </InfoBlock>
+                    </section>
+
+                    <section className='md:mx-24 mx-12 md:my-24 my-12'>
+                        <InfoBlock title="Catégories">
+                                <div className="flex flex-col gap-5">
+                                    {/* boucle sur toutes les tags existantes qui redirigent vers le catalogue filtré par le tag choisit */}
+
+                                    {uniqueTags.map((tag, index) => (
+                                        <Link to={`/catalogue?filtre=${tag.tagUrl}`} key={index} className="border-b-2 border-black py-1.5 cursor-pointer w-fit font-semibold text-clamp-legend line-clamp-legend">
+                                            {tag.tag}
+                                        </Link>
+                                    ))}
+                                </div>
+                        </InfoBlock>
+                    </section>
                 </>
 
             )}

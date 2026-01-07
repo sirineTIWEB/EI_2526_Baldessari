@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import Hero from '../composants/UI/Hero';
 import { useLoading } from "../context/LoadingContext";
 import Isotope from 'isotope-layout';
@@ -7,8 +8,11 @@ import SortFilter from '../composants/isotope/SortFilter';
 import Oeuvre from '../composants/Oeuvre';
 
 function Catalogue() {
-    const { activeFilter, oeuvres } = useLoading();
+    const { activeFilter, oeuvres, setActiveFilter } = useLoading();
     const isotope = useRef(null);
+
+    // pour lire le filtre dans l'URL
+    const [searchParams] = useSearchParams();
 
     const filters = [
         { label: 'Tous', value: '*' },
@@ -23,6 +27,16 @@ function Catalogue() {
         { label: 'oeuvre (A-Z)', value: 'titre-asc' },
         { label: 'oeuvre (Z-A)', value: 'titre-desc' }
     ];
+
+    useEffect(() => {
+        // Lire le paramètre filtre depuis l'URL au chargement
+        const filtreParam = searchParams.get('filtre');
+        if (filtreParam) {
+            // Convertir le paramètre URL en format Isotope
+            const isotopeFiltreValue = `.tag-${filtreParam}`;
+            setActiveFilter(isotopeFiltreValue);
+        }
+    }, [searchParams, setActiveFilter]);
 
     useEffect(() => {
         // Initialiser Isotope localement

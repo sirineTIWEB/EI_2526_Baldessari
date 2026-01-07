@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import Event from "./Event";
 import { useLoading } from "../context/LoadingContext";
 import SortFilter from "./isotope/SortFilter";
@@ -7,6 +8,7 @@ function Evenements(){
     const { events } = useLoading();
     const [activeFilter, setActiveFilter] = useState('*');
     const [sortBy, setSortBy] = useState('');
+    const [searchParams] = useSearchParams();
 
 
     const filters = [
@@ -21,6 +23,14 @@ function Evenements(){
         { label: 'A - Z', value: 'titre-asc' },
         { label: 'Z - A', value: 'titre-desc' }
     ];
+
+    // Lire le paramètre filtre depuis l'URL au chargement
+    useEffect(() => {
+        const filtreParam = searchParams.get('filtre');
+        if (filtreParam) {
+            setActiveFilter(filtreParam);
+        }
+    }, [searchParams]);
 
     // Filtrer les événements
     let filteredEvents = events;
