@@ -1,6 +1,7 @@
 import Form from '../composants/Form'
 
 function Contact() {
+
     return (
         <section className='my-5 md:my-0 md:h-screen md:justify-evenly flex flex-col items-center gap-10 md:gap-20'>
             <h1 className='text-center'>Gagner des tickets</h1>

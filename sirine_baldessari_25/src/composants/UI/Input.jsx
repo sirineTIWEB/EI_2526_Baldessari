@@ -3,7 +3,7 @@ function Input(props) {
         <>
             <label className="font-extrabold text-clamp-body line-clamp-body">{props.label}
                 <input
-
+                    name={props.name}
                     value={props.value}
                     onChange={props.onChange}
                     type={props.type}
