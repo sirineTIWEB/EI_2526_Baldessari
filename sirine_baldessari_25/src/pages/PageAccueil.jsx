@@ -1,6 +1,13 @@
+import SectionParallaxe from "../composants/SectionParallaxe";
+import SectionRedirection from "../composants/SectionRedirection";
+
 function Accueil() {
-    return(
-        <h1>hi</h1>
+    return (
+        <>
+            <SectionParallaxe />
+            <SectionRedirection />
+        </>
+
     )
 
 }
