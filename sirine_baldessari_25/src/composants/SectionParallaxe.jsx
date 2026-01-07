@@ -103,14 +103,14 @@ function SectionParallaxe() {
         // Cleanup
         return () => {
             window.removeEventListener('resize', handleResize);
-            // Kill all ScrollTriggers
-            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-            // Unpin all elements
-            gsap.set(".horizontal-container", { clearProps: "all" });
-            gsap.set(".parallaxe", { clearProps: "all" });
-            gsap.set("#fond", { clearProps: "all" });
-            gsap.set("#texte", { clearProps: "all" });
-            gsap.set("#people", { clearProps: "all" });
+            // Kill the timeline first
+            tl.kill();
+            // Kill all ScrollTriggers associated with this component
+            ScrollTrigger.getAll().forEach(trigger => {
+                if (trigger.vars.trigger === ".horizontal-container") {
+                    trigger.kill(true); // true = revert
+                }
+            });
         };
     }, []);
 

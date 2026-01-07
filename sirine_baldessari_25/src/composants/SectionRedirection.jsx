@@ -1,29 +1,19 @@
 import Redirection from "./Redirection";
 import { useNavigate } from "react-router-dom";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 function SectionRedirection() {
     const navigate = useNavigate();
 
-    const cleanupAndNavigate = (path) => {
-        // Kill all ScrollTriggers before navigation
-        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-        // Navigate
-        navigate(path);
-        // Scroll to top after navigation
-        window.scrollTo(0, 0);
-    };
-
     const goToBaldessari = () => {
-        cleanupAndNavigate('/baldessari');
+        navigate('/baldessari');
     };
 
     const goToCatalogue = () => {
-        cleanupAndNavigate('/catalogue');
+        navigate('/catalogue');
     };
 
     const goToInfo = () => {
-        cleanupAndNavigate('/info');
+        navigate('/info');
     };
 
     return(
