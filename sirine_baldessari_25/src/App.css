@@ -14,6 +14,8 @@
     --line-clamp-h3: clamp(24px, 4vw, 28px);
     --text-clamp-body: clamp(16px, 2vw, 20px);
     --line-clamp-body: clamp(19px, 3vw, 40px);
+    --text-clamp-Tbody: clamp(14px, 2vw, 16px);
+    --line-clamp-Tbody: clamp(16px, 3vw, 19px);
     --text-clamp-legend: clamp(12px, 1.5vw, 14px);
     --line-clamp-legend: clamp(14px, 2vw, 16px);
     --text-clamp-Tlegend: clamp(10px, 1.5vw, 12px);
@@ -58,6 +60,7 @@ p {
     font-weight: 800;
     line-height: var(--line-clamp-body);
 }
+
 
 h3 {
     font-size: var(--text-clamp-legend);
