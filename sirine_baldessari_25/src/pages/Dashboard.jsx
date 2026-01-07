@@ -1,6 +1,8 @@
 function Dashboard() {
     return (
-        <div>Dashboard - Admin uniquement</div>
+        <div>
+            <h1>statistique de réponse du formulaire</h1>
+        </div>
     )
 }
 export default Dashboard;
