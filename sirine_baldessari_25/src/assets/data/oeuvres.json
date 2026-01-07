@@ -131,7 +131,7 @@
     "collectionUrl": "goya-series",
     "image": {
       "aspect": "portrait",
-      "src": "/assets/peintures/goyaThereisntTime.jpg"
+      "src": "/assets/peintures/goyaThereisntTime.png"
     }
   },
   {
@@ -146,7 +146,7 @@
     "collectionUrl": "goya-series",
     "image": {
       "aspect": "portrait",
-      "src": "/assets/peintures/goyaThisThatOrTheOther.jpg"
+      "src": "/assets/peintures/goyaThisThat.jpg"
     }
   },
   {
@@ -161,7 +161,7 @@
     "collectionUrl": "prima-facie",
     "image": {
       "aspect": "portrait",
-      "src": "/assets/peintures/primaFacie_hopeless.jpg"
+      "src": "/assets/peintures/primafacie_hopeless.jpg"
     }
   },
   {
@@ -176,7 +176,7 @@
     "collectionUrl": "prima-facie",
     "image": {
       "aspect": "portrait",
-      "src": "/assets/peintures/primaFacie_strained.jpeg"
+      "src": "/assets/peintures/primafacie_strained.jpeg"
     }
   },
   {
@@ -209,5 +209,4 @@
       "src": "/assets/peintures/twokisses.png"
     }
   }
-  
 ]

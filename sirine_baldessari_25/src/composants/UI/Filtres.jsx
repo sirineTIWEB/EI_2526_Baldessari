@@ -2,7 +2,10 @@ import { useLoading } from "../../context/LoadingContext";
 import Filtre from "./Filtre";
 
 function Filtres(props) {
-    const { activeFilter, setActiveFilter } = useLoading();
+    // Utiliser les props si fournis, sinon utiliser le contexte
+    const context = useLoading();
+    const activeFilter = props.activeFilter !== undefined ? props.activeFilter : context.activeFilter;
+    const setActiveFilter = props.setActiveFilter || context.setActiveFilter;
 
     return (
         <section className="md:mx-24 mx-12 my-12 flex gap-4">

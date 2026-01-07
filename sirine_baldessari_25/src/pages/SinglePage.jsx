@@ -27,14 +27,17 @@ function SinglePage() {
         return <div>{isEvent ? 'Événement' : 'Oeuvre'} non trouvé(e)</div>;
     }
 
+    // reconnaitre si cest un tableau pour la syntaxe de récup qui est différente.
+    const imageData = Array.isArray(data.image) ? data.image[0] : data.image;
+
     return (
         <>
             <div className="md:mx-24 md:my-9 w-fit">
                 <Bouton title={`Retour aux ${isEvent ? 'événements' : 'oeuvres'}`} onClick={() => window.history.back()} />
             </div>
             <div className="hidden md:flex md:mx-24 gap-24">
-                <div className={`${data.image[0].aspect === 'portrait' ? 'w-[40vw]' : 'w-[70vw]'} aspect-3/2`}>
-                    <img src={data.image[0].src} alt={data.title} className="w-full object-cover" />
+                <div className={`${imageData.aspect === 'portrait' ? 'w-[40vw]' : 'w-[70vw]'} aspect-3/2`}>
+                    <img src={imageData.src} alt={data.title} className="w-full object-cover" />
 
                 </div>
                 <div className="flex flex-col gap-20 w-fit">
@@ -54,8 +57,8 @@ function SinglePage() {
             </div>
             <div className="flex flex-col md:hidden gap-24">
                 <div className="flex flex-col gap-20">
-                    <div className={`h- ${data.image[0].aspect === 'portrait' ? 'w-[40vw]' : 'w-screen'}`}>
-                        <img src={data.image[0].src} alt={data.title} className="object-cover" />
+                    <div className={`h- ${imageData.aspect === 'portrait' ? 'w-[40vw]' : 'w-screen'}`}>
+                        <img src={imageData.src} alt={data.title} className="object-cover" />
 
                     </div>
                     <div className="md:ml-24 md:mr-2.5">
