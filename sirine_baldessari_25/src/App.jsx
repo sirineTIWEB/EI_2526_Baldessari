@@ -11,6 +11,7 @@ import Footer from './composants/Footer';
 import Header from './composants/Header';
 import Admin from './pages/Admin';
 import Dashboard from './pages/Dashboard';
+import Baldessari from './pages/Baldessari.jsx';
 
 import RouteProtegee from './composants/RouteProtegee.jsx';
 import { AuthProvider } from './context/AuthContext.jsx';
@@ -26,6 +27,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Accueil />} />
             <Route path="/info" element={<Info />} />
+            <Route path="/baldessari" element={<Baldessari />} />
             <Route path="/catalogue" element={<Catalogue />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/admin" element={<Admin />} />
