@@ -1,5 +1,5 @@
-import Filtres from "../UI/Filtres";
-import SortBy from "../UI/SortBy";
+import Filtres from "./Filtres";
+import SortBy from "./SortBy";
 
 function SortFilter(props) {
     return (

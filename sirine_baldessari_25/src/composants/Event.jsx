@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Tag from "../UI/Tag";
+import Tag from "./UI/Tag";
 
 function Event(props) {
 

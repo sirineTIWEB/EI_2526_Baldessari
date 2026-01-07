@@ -3,8 +3,8 @@ import Hero from '../composants/UI/Hero';
 import { useLoading } from "../context/LoadingContext";
 import Isotope from 'isotope-layout';
 import 'isotope-cells-by-column';
-import SortFilter from '../composants/InfoBlocks/SortFilter';
-import Oeuvre from '../composants/InfoBlocks/Oeuvre';
+import SortFilter from '../composants/isotope/SortFilter';
+import Oeuvre from '../composants/Oeuvre';
 
 function Catalogue() {
     const { activeFilter, oeuvres } = useLoading();

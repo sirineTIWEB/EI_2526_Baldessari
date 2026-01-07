@@ -1,4 +1,4 @@
-import BozarLogo from '../../assets/logo/logo_bozar.png';
+import BozarLogo from '../assets/logo/logo_bozar.png';
 import { useState, useEffect } from 'react';
 
 

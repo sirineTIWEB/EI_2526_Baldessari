@@ -1,5 +1,5 @@
 import { useLoading } from "../../context/LoadingContext";
-import Filtre from "./Filtre";
+import Filtre from "../UI/Filtre";
 
 function Filtres(props) {
     // Utiliser les props si fournis, sinon utiliser le contexte

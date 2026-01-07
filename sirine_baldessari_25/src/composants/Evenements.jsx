@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Event from "./Event";
-import { useLoading } from "../../context/LoadingContext";
-import SortFilter from "./SortFilter";
+import { useLoading } from "../context/LoadingContext";
+import SortFilter from "./isotope/SortFilter";
 
 function Evenements(){
     const { events } = useLoading();

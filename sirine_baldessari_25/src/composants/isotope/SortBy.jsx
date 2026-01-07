@@ -1,4 +1,4 @@
-import Select from './Select.jsx';
+import Select from '../UI/Select.jsx';
 
 function SortBy(props) {
     const handleSortChange = (e) => {

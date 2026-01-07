@@ -1,9 +1,9 @@
 import Hero from '../composants/UI/Hero'
 import ImgUrl from '../assets/illustrations/sittingJohn.png'
-import BannerAlert from '../composants/InfoBlocks/BannerAlert'
+import BannerAlert from '../composants/BannerAlert'
 import InfoBlock from '../composants/UI/InfoBlock'
-import Tarifs from '../composants/InfoBlocks/Tarifs'
-import Evenements from '../composants/InfoBlocks/Evenements'
+import Tarifs from '../composants/Tarifs'
+import Evenements from '../composants/Evenements'
 
 function PageInfo() {
 
